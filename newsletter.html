@@ -7,7 +7,7 @@
     <title>Alura Newsletter</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-    // customizacoes
+      // customizacoes
       tailwind.config = {
         theme: {
           extend: {
@@ -15,23 +15,24 @@
               azul: {
                 claro: "#C5DFFF",
                 escuro: "#061E3C",
-                hover: "#1057B0"
-              }
+                hover: "#1057B0",
+              },
             },
             fontFamily: {
-                inter: ['Inter', 'sans-serif']
-            }
-          }
-        }
-      }
+              inter: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
     </script>
   </head>
 
   <!-- justify-center: centraliza horizontalmente -->
   <!-- items-center: centraliza verticalmente -->
-  <body class="bg-azul-claro font-inter flex justify-center items-center h-screen">
+  <body
+    class="bg-azul-claro font-inter flex justify-center items-center h-screen"
+  >
     <main class="flex px-6 drop-shadow-2xl">
-        
       <section class="bg-azul-escuro hidden">
         <img
           class=""
@@ -75,18 +76,27 @@
 
         <div class="text-center">
           <h1 class="text-4xl mb-2">Alura Newsletter</h1>
-          <p class="text-xl text-gray-700 mb-2">Mergulhe em uma plataforma que respira tecnologia!</p>
+          <p class="text-xl text-gray-700 mb-2">
+            Mergulhe em uma plataforma que respira tecnologia!
+          </p>
         </div>
 
         <form>
-          <label class="text-sm font-bold text-gray-700 mb-2" for="email">Email</label>
+          <label class="text-sm font-bold text-gray-700 mb-2" for="email"
+            >Email</label
+          >
           <input
-            class="text-sm w-full mb-4 pl-3 rounded border py-2 shadow"
+            class="text-sm w-full mb-4 pl-3 rounded border py-2 shadow focus:outline-none hover:border-azul-claro hover:ring-1 hover:ring-azul-escuro focus:border-azul-escuro focus:ring-1 focus:ring-azul-escuro"
             id="email"
             type="email"
             placeholder="Digite seu endereço de email"
           />
-          <button class="font-bold text-white bg-azul-escuro w-full py-2 rounded-full shadow-2xl" type="button">Inscreva-se</button>
+          <button
+            class="font-bold text-white bg-azul-escuro w-full py-2 rounded-full shadow-2xl hover:bg-azul-hover duration-150"
+            type="button"
+          >
+            Inscreva-se
+          </button>
         </form>
       </section>
     </main>
